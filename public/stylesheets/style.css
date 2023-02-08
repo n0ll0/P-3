@@ -8,7 +8,7 @@ a {
 }
 
 table {
-  border: 2px solid #0005 ;
+  border: 2px dashed #000 ;
 }
 
 th{
@@ -22,4 +22,8 @@ tr:nth-child(even) {
 }
 button[type="submit"]{
   margin: 1em;
+}
+td,th{
+  padding: 0.5em;
+  text-align: center;
 }
