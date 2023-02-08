@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <%= result %> 
+    <table>
+        <% Object.keys(result).forEach(e => { %>
+            <tr>
+                <td><%= e %> </td>
+                <td><%= result[e] %> </td>
+            </tr>
+        <% }) %>
+    </table>
 </body>
 </html>

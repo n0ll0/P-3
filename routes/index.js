@@ -19,7 +19,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  res.render('result', { result: req.body.results});
+  console.log(req.body);
+  res.render('result', { result: req.body});
 });
 
 module.exports = router;

@@ -7,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/">
+    <form action="/" method="POST">
         <table>
             <% questions.forEach(question => { %>
                 <tr>
-                    <th><%= question.head %> </th>
+                    <th colspan="2"><%= question.head %> </th>
                 </tr>
                 <tr>
                     <th>Yes</th>
-                    <th>Mabye</th>
+                    <!-- <th>Mabye</th> -->
                     <th>No</th>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="yes" id="<%=question.id%>"></td>
-                    <td><input type="radio" name="mabye" id="<%=question.id%>"></td>
-                    <td><input type="radio" name="no" id="<%=question.id%>"></td>
+                    <td><input type="radio" name="<%=question.id%>" id="Yes" value="Yes"></td>
+                    <!-- <td><input type="radio" name="<%=question.id%>" id="Mabye" value="Mabye"></td> -->
+                    <td><input type="radio" name="<%=question.id%>" id="No" value="No"></td>
                 </tr>
             <% }) %>
         </table>
