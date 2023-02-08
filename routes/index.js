@@ -3,12 +3,10 @@ var router = express.Router();
 
 const Questions = [
   {
-    "head": "Are you healthy?",
-    "id": "healthy"
+    "head": "Are you healthy?"
   },
   {
-    "head": "Are you?",
-    "id": "again"
+    "head": "Are you?"
   },
 
 ]

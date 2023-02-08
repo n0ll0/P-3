@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+table {
+  border: 2px solid #0005 ;
+}
+
+th{
+  font-size: 1.5em;
+}
+tr{
+  background-color: #0001
+}
+tr:nth-child(even) {
+  background-color: #0003
+}
+button[type="submit"]{
+  margin: 1em;
+}

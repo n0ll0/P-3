@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
+    <h1>Form</h1>
     <form action="/" method="POST">
         <table>
             <% questions.forEach(question => { %>
@@ -14,14 +16,8 @@
                     <th colspan="2"><%= question.head %> </th>
                 </tr>
                 <tr>
-                    <th>Yes</th>
-                    <!-- <th>Mabye</th> -->
-                    <th>No</th>
-                </tr>
-                <tr>
-                    <td><input type="radio" name="<%=question.id%>" id="Yes" value="Yes"></td>
-                    <!-- <td><input type="radio" name="<%=question.id%>" id="Mabye" value="Mabye"></td> -->
-                    <td><input type="radio" name="<%=question.id%>" id="No" value="No"></td>
+                    <td><label for="<%=question.head%>">Yes</label><input type="radio" name="<%=question.head%>" id="Yes" value="Yes" required></td>
+                    <td><label for="<%=question.head%>">No</label><input type="radio" name="<%=question.head%>" id="No" value="No" required></td>
                 </tr>
             <% }) %>
         </table>
