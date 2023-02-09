@@ -2,13 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 const Questions = [
-  {
-    "head": "Are you healthy?"
-  },
-  {
-    "head": "Are you?"
-  },
-
+  "Are you healthy?",
+  "Are you?",
+  "I don't think so.",
+  "Ur mom"
 ]
 
 /* GET home page. */

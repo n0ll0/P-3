@@ -13,11 +13,11 @@
         <table>
             <% questions.forEach(question => { %>
                 <tr>
-                    <th colspan="2"><%= question.head %> </th>
+                    <th colspan="2"><%= question %> </th>
                 </tr>
                 <tr>
-                    <td><label for="<%=question.head%>">Yes</label><input type="radio" name="<%=question.head%>" id="Yes" value="Yes" required></td>
-                    <td><label for="<%=question.head%>">No</label><input type="radio" name="<%=question.head%>" id="No" value="No" required></td>
+                    <td><label for="<%=question%>">Yes</label><input type="radio" name="<%=question%>" id="Yes" value="Yes" required></td>
+                    <td><label for="<%=question%>">No</label><input type="radio" name="<%=question%>" id="No" value="No" required></td>
                 </tr>
             <% }) %>
         </table>
