@@ -2,11 +2,17 @@ var express = require('express');
 var router = express.Router();
 
 const Questions = [
-  "Are you healthy?",
-  "Are you?",
-  "I don't think so.",
-  "Ur mom"
-]
+  'Color preference?',
+  'Adventure or relaxation?',
+  'Spontaneous or planned?',
+  'Books or movies?',
+  'Early bird or night owl?',
+  'City or countryside?',
+  'Alone or social time?',
+  'Pizza or sushi?',
+  'Summer or winter?',
+  'Music or silence?',
+];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
