@@ -8,7 +8,7 @@ const Questions = [
   'Books or movies?',
   'Early bird or night owl?',
   'City or countryside?',
-  'Alone or social time?',
+  'Alone or social time?', 
   'Pizza or sushi?',
   'Summer or winter?',
   'Music or silence?',
